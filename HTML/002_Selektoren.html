@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektoren</title>
+    <!-- <link rel="stylesheet" href="../CSS/main.css"> -->
+    <style>
+        /* Universalselektor */
+        *{
+            /* gilt für ALLE Elemente in meinem html-Dokument */
+        }
+
+        /* Typselektor */
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Klassen-Selektor */
+        .demo-p{
+            color: green;
+        }
+
+        /* ID-Selektor */
+        #demo-id{
+            color: red;
+        }
+
+    
+        ul>li{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .demo01{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .demo-ul>li{
+            color: cadetblue;
+        }
+
+
+        /* Attributselektoren */
+        a[target]{
+            text-decoration: none;
+        }
+
+        /* bestimmter Wert */
+        a[target="_blank"]{
+            /* styling */
+        }
+
+        /* soll beginnen mit... */
+        /* .demo01, .demo02, .demo03,... */
+        a[class^="demo"]{
+            /* styling */
+        }
+
+        /* soll enden mit... */
+        /* .demox, .p-x, .listx, ... */
+        a[class$="x"]{
+            /* styling */
+        }
+
+
+        /* muss Zeichenfolge enthalten */
+        p[class*="em"]{
+            /* styling */
+        }
+
+
+        /* Link-Styling */
+        /* LoVe/HAte - richtige Reihenfolge */
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: gold;
+        }
+        a:hover{
+            font-size: 44px;
+        }
+        a:active{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>Das ist Paragraph Nr.1</p>
+    <p>Das ist Paragraph Nr.2</p>
+    <p>Das ist Paragraph Nr.3</p>
+    <p>Das ist Paragraph Nr.4</p>
+    <p class="demo-p">Das ist Paragraph Nr.5</p>
+    <p id="demo-id" class="demo-p">Das ist Paragraph Nr.6</p>
+    <p>Das ist Paragraph Nr.7</p>
+    <p>Das ist <a href="https://en.wikipedia.org/wiki/Paragraph">Paragraph</a> Nr.8</p>
+    <p class="demo-p">Das ist Paragraph Nr.9</p>
+    <p style="color: cyan">Das ist <a href="https://en.wikipedia.org/wiki/Paragraph" target="_blank">Paragraph</a>  Nr.10</p>
+
+    <ul class="demo-ul">
+        <li>Testtext</li>
+        <li class="demo01">Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+        <li>Testtext</li>
+    </ul>
+</body>
+</html>

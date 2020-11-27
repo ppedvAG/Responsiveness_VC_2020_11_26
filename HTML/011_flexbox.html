@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex-container {
+            background-color: chartreuse;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* justify-content: horizontale Anordnung */
+            align-items: center;
+            /* align-items: vertikale Ausrichtung - in Kombination mit Höhe */
+            /* flex-direction: column-reverse; */
+            height: 100vh;
+        }
+
+        .flex-item {
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            background-color: rgb(203, 255, 152);
+            border: 2px solid rgb(69, 138, 0);
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">01</div>
+        <div class="flex-item">02</div>
+        <div class="flex-item">03</div>
+        <div class="flex-item">04</div>
+        <div class="flex-item">05</div>
+        <div class="flex-item">06</div>
+        <div class="flex-item">07</div>
+        <div class="flex-item">08</div>
+        <div class="flex-item">09</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .float-container {
+            background-color: aqua;
+           /*  border: 5px solid rgb(0, 104, 104); */
+        }
+
+        .float-container::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .float-item {
+            height: 150px;
+            width: 150px;
+            border: 2px solid navy;
+            background-color: rgb(169, 169, 228);
+            float: left;
+        }
+
+        .demo {
+            height: 60vh;
+            background-color: blueviolet;
+        }
+
+        /* .clearboth{
+            clear: both;
+        } */
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="float-container">
+        <div class="float-item">01</div>
+        <div class="float-item">02</div>
+        <div class="float-item">03</div>
+        <div class="float-item">04</div>
+        <div class="float-item">05</div>
+        <div class="float-item">06</div>
+        <div class="float-item">07</div>
+        <div class="float-item">08</div>
+        <div class="float-item">09</div>
+        <!-- <div class="clearboth"></div> -->
+    </div>
+    <div class="demo">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda, tempora adipisci numquam hic optio
+        laudantium mollitia laboriosam dolorum sunt, fugit repellat illo, deserunt facere expedita quia cupiditate
+        incidunt tempore in consectetur! Ipsam magni quam distinctio quo maiores quidem, adipisci dicta molestias
+        laudantium excepturi quod, placeat possimus expedita omnis soluta perferendis nihil fuga asperiores officia,
+        nisi dolor cumque. Reprehenderit dolorum magni veritatis iste veniam? Doloribus voluptatum libero culpa odio
+        officia tempora nostrum itaque blanditiis dolor distinctio totam nesciunt placeat dicta laboriosam ea, nisi
+        eligendi ducimus fugit voluptate magnam molestiae autem. Doloremque repellendus omnis magni placeat quod
+        architecto culpa, voluptate minus.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabellen</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: Calibri, Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        td,
+        th {
+            border: 1px solid white;
+            padding: .5em 2em;
+        }
+
+        th {
+            background-color: cornflowerblue;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(181, 202, 241);
+        }
+
+        tr:nth-child(even){
+            background-color: rgb(229, 235, 247);
+        }
+
+        td:nth-child(2),
+        td:nth-child(3){
+            text-align: right;
+        }
+        /* 
+        tr:last-child>td{
+            background-color: rgb(22, 64, 143);
+        }
+         */
+    </style>
+</head>
+
+<body>
+
+    <!-- 4 Möglichkeiten, um mit Tabelle responsiv umzugehen -->
+    <!-- kleinstes Übel auswählen :(  -->
+    <!-- 
+        Variante 1: Breite in % (wird irgendwann zu klein und unleserlich)
+        Variante 2: fixe Breite (Scrollbalken...)
+        Variante 3: alles in eine Spalte (wenn überhaupt nur bei sehr kleinen Tabellen)
+        Variante 4: "nice to have"-Spalten weglassen wenn Ausgabebildschirm kleiner
+     -->
+
+
+
+    <table>
+        <caption>Obstlager</caption>
+        <thead>
+            <tr>
+                <th>
+                    <!-- table header (Spaltenüberschrift) -->
+                    Obst
+                </th>
+                <th>
+                    Anzahl
+                </th>
+                <th>
+                    Preis
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- table row (Zeile) -->
+                <td>
+                    <!-- table data (Tabelleneintrag; so viele, wie Spalten) -->
+                    Äpfel
+                </td>
+                <td>
+                    150
+                </td>
+                <td>
+                    0.15
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bananen
+                </td>
+                <td>
+                    100
+                </td>
+                <td>
+                    0.18
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Birnen
+                </td>
+                <td>
+                    200
+                </td>
+                <td>
+                    0.13
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ananas
+                </td>
+                <td>
+                    10
+                </td>
+                <td>
+                    2.18
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kiwis
+                </td>
+                <td>
+                    55
+                </td>
+                <td>
+                    0.99
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">&copy; Leos Tabelle</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <table>
+        <caption>Obstlager</caption>
+        <tr>
+            <th>
+                <!-- table header (Spaltenüberschrift) -->
+                Obst
+            </th>
+            <th>
+                Anzahl
+            </th>
+            <th>
+                Preis
+            </th>
+        </tr>
+        <tr>
+            <!-- table row (Zeile) -->
+            <td>
+                <!-- table data (Tabelleneintrag; so viele, wie Spalten) -->
+                Äpfel
+            </td>
+            <td>
+                150
+            </td>
+            <td>
+                0.15
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Bananen
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                0.18
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Birnen
+            </td>
+            <td>
+                200
+            </td>
+            <td>
+                0.13
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ananas
+            </td>
+            <td>
+                10
+            </td>
+            <td>
+                2.18
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kiwis
+            </td>
+            <td>
+                55
+            </td>
+            <td>
+                0.99
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">&copy; Leos Tabelle</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

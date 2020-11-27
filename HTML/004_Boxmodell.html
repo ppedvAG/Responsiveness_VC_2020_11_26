@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodell</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightseagreen;
+            font-size: 44px;
+        }
+
+        .demo02{
+            padding: 50px;
+            background-color: rgb(79, 134, 132);
+        }
+
+        .demo03{
+            padding: 50px;
+            background-color: rgb(79, 134, 132);
+            border: 10px solid  rgb(13, 49, 48);
+        }
+
+        .demo05{
+            padding: 50px;
+            background-color: rgb(79, 134, 132);
+            border: 10px solid  rgb(13, 49, 48);
+            box-sizing: border-box;
+        }
+
+        .demo07{
+            padding: 50px;
+            background-color: rgb(79, 134, 132);
+            border: 10px solid  rgb(13, 49, 48);
+            box-sizing: border-box;
+            margin-bottom: 25px;
+        }
+
+        .demo08{
+            border: 10px solid  rgb(13, 49, 48);
+            margin-top: 70px;
+            box-sizing: border-box;
+        }
+
+        .demo09{
+            /* border: 10px solid  rgb(151, 233, 230); */ 
+            /* padding-top: 1px;  */          
+            box-sizing: border-box;
+        }
+
+        /* Dieser Margin läuft über den Container hinaus - außer, 
+            wir verwenden oben padding-top, border,... o.Ä. */
+        .inner{
+            height: 50px;
+            width: 100px;
+            margin-top: 49px;
+        }
+
+        .demo10{
+            margin: 20px 0 50px 10px;
+        }
+
+        .demo11{
+            margin: 20px 50px;
+        }
+
+        .demo12{
+            padding: 20px;
+            box-sizing: border-box;
+            border: 10px solid  rgb(13, 49, 48);
+        }
+
+        .inner-demo12{
+            height: 100%;
+            width: 100%;
+            background-color: lightskyblue;
+        }
+
+        .demo13{
+            box-sizing: border-box;
+            border: 10px solid  rgb(13, 49, 48);
+            padding: 20px 0 50px 10px;
+        }
+
+        .inner-demo13{
+            height: 100%;
+            width: 100%;
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="demo01">01</div>
+    <div class="demo02">02</div>
+    <div class="demo03">03</div>
+    <div class="demo04">04</div>
+    <div class="demo05">05</div>
+    <div class="demo06">06</div>
+    <div class="demo07">07</div>
+    <div class="demo08">08</div>
+    <div class="demo09">
+        <div class="inner">Hallo!</div>
+        09
+    </div>
+    <div class="demo10">10</div>
+    <div class="demo11">11</div>
+    <div class="demo12">
+        <div class="inner-demo12"></div>
+    </div>
+    <div class="demo13">
+        <div class="inner-demo13"></div>
+    </div>
+    
+</body>
+</html>

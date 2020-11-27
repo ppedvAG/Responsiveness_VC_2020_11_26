@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Column Layout</title>
+    <style>
+        :root{
+            font-size: 20px;
+        }
+        .content-container{
+            width: 70%;
+            margin: 0 auto;
+        }
+        .demo {
+            /* margin: 0 auto; */
+            /* background-color: cornflowerblue; */
+            column-count: 3;
+            text-align: justify;
+            column-gap: 3rem;
+            column-rule: 4px dotted rgb(10, 40, 94);
+            /* padding: 2rem; */
+        }
+
+        .demo>p {
+            margin: 0;
+        }
+
+        .demo>h3 {
+            column-span: all;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <h1>Sport</h1>
+        <section>
+            <h2>Fußball</h2>
+            <article class="demo">
+                <h3>Match von gestern laaaaaaaaange Überschrift</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis modi vero ratione voluptas.
+                    Architecto obcaecati id suscipit! Dolor magni praesentium, temporibus dicta amet odio obcaecati
+                    culpa
+                    iure aut ab, veniam eius laboriosam neque ullam sapiente sequi, quam architecto iusto aperiam
+                    laudantium
+                    eaque reiciendis similique magnam ipsam! Fugiat aspernatur aperiam distinctio cupiditate qui quidem,
+                    dicta doloremque nam iste necessitatibus, mollitia iusto voluptates minus repudiandae debitis
+                    voluptatibus dignissimos harum blanditiis sit illo hic perspiciatis? Deleniti minima, enim earum
+                    odio
+                    consequuntur quis error quasi vel exercitationem eaque saepe libero repellendus, illo possimus
+                    dolorem,
+                    dolores dolorum odit ducimus. Quibusdam a ratione voluptatem dolores vel.
+                </p>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinatoren</title>
+    <style>
+        /* Nachfahren-Kombinator (descendant selector) */
+        div p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div span{
+            text-decoration: underline;
+        }
+
+
+        /* Kind-Kombinator (child selector) */
+        div>p{
+            font-style: italic;
+        }
+        
+        div>span{
+            color: aqua;
+        }
+
+        /* Geschwister-Kombinatoren (sibling selector) */
+        /* Allgemeiner Geschwister-Kombinator */
+        h1~p{
+            color: darkgoldenrod;
+        }
+
+
+        /* Benachbarter Geschwister-Kombinator */
+        h1+p{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Das ist meine h1 Überschrift</h1>
+    <p>Das ist meine Unterüberschrift (p)</p>
+    <div>
+        <span>Das ist eine Span.</span>
+        <p>Das ist Paragraph Nr.1.</p>
+        <p>Das ist Paragraph Nr.2.</p>
+        <p>Das ist Paragraph Nr.3.</p>
+        <p>Das ist Paragraph Nr.4.</p>
+        <p>Das ist Paragraph Nr.5.</p>
+        <p>Das ist Paragraph Nr.6.</p>
+        <p>Das ist <span> eine Span in Paragraph Nr.7.</span></p>
+        <p>Das ist Paragraph Nr.8.</p>
+        <p>Das ist Paragraph Nr.9.</p>
+        <p>Das ist Paragraph Nr.10.</p>
+    </div>
+    <h1>Das ist eine h1 Überschrift</h1>
+    <p>Das ist Paragraph Nr.1 außerhalb des Divs.</p>
+    <p>Das ist Paragraph Nr.2 außerhalb des Divs.</p>
+    <p>Das ist Paragraph Nr.3 außerhalb des Divs.</p>
+    <h1>Das ist eine h1 Überschrift</h1>
+    <div></div>
+    <p>Das ist ein Paragraph nach einem div</p>
+
+    <div>
+        <p>Das ist ein Paragraph.</p>
+        <div>
+            <p>Das ist ein verschachtelter Paragraph.</p>
+        </div>
+    </div>
+</body>
+</html>

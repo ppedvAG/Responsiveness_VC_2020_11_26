@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder</title>
+    <!-- <link rel="stylesheet" href="../CSS/main.css"> -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        .img-container-1 {
+            border: 5px solid aqua;
+            padding: 50px;
+            width: 100%;
+            box-sizing: border-box;
+            /* background-color: aqua; */
+        }
+
+        .demo-img1 {
+            width: 100%;
+        }
+
+        .demo-img2 {
+            max-width: 100%;
+        }
+
+        .demo-img3 {
+            width: 100%;
+        }
+
+        figcaption {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            padding-top: 1em;
+        }
+
+        .demo-pic>img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="img-container-1">
+        <img class="demo-img1" src="../images/bird_s.jpg" alt="bird">
+    </div>
+    <div class="img-container-1">
+        <img class="demo-img2" src="../images/bird_s.jpg" alt="bird">
+    </div>
+
+    <div class="img-container-1">
+        <figure>
+            <img class="demo-img3" src="../images/landscape_m.jpg" alt="landscape">
+            <figcaption>Wunderschöne Landschaft</figcaption>
+        </figure>
+    </div>
+
+
+    <picture>
+        <source srcset="../images/bird_s.jpg" media="(max-width: 600px)">
+        <source srcset="../images/landscape_m.jpg" media="(max-width: 1000px)">
+        <source srcset="../images/asian-woman_l.jpg" media="(max-width: 1200px)">
+        <img src="../images/error.jpg" alt="error">
+    </picture>
+
+    <figure>
+        <picture>
+            <source srcset="../images/bird_s.jpg" media="(max-width: 600px)">
+            <source srcset="../images/landscape_m.jpg" media="(max-width: 1000px)">
+            <source srcset="../images/asian-woman_l.jpg" media="(max-width: 1200px)">
+            <img src="../images/error.jpg" alt="error">
+        </picture>
+        <figcaption>Test! :)</figcaption>
+    </figure>
+
+    <div class="img-container-1">
+        <picture class="demo-pic">
+            <source media="(max-width: 600px)" srcset="../images/grasshouse_small.jpg"">
+            <source media=" (max-width: 1000px)" srcset="../images/grasshouse_medium.jpg"">
+            <source media=" (max-width: 1200px)" srcset="../images/grasshouse_big.jpg"">
+            <img src=" ../images/grasshouse.jpg" alt="grasshouse">
+        </picture>
+    </div>
+</body>
+
+</html>

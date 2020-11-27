@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Größenangaben</title>
+    <style>
+
+        :root{
+            font-size: 20px;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        div{
+            height: 150px;
+        }
+
+        .demo-px{
+            background-color: navy;
+            width: 200px;
+        }
+
+        .demo-em{
+            font-size: 20px;
+            background-color: rgb(62, 62, 179);
+            width: 20em;
+        }
+
+        .demo-rem{
+            background-color: rgb(178, 178, 236);
+            width: 20rem;
+        }
+
+        .demo-percent{
+            background-color: rgb(89, 89, 177);
+            width: 100%;
+            /* height: 100%; */ /* funktioniert NICHT! Nur, wenn in einem Container, der eine fixe Höhe hat! */
+        }
+
+        .demo-vw{/* viewport width */
+            font-size: 8vw;
+            background-color: rgb(33, 33, 114);
+            width: 80vw;
+        }
+        
+        .demo-vh{/* viewport height */
+            background-color: rgb(123, 123, 185);
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="demo-px">Das ist ein Div - px</div>
+    <div class="demo-em">Das ist ein Div - em</div>
+    <div class="demo-rem">Das ist ein Div - rem</div>
+    <div class="demo-percent">Das ist ein Div - percent</div>
+    <div class="demo-vw">Das ist ein Div - vw</div>
+    <div class="demo-vh">Das ist ein Div - vh</div>
+
+</body>
+</html>
